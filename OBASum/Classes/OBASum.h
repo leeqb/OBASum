@@ -9,6 +9,6 @@
 #ifndef OBASum_h
 #define OBASum_h
 
-#import "YPPhotoPicker.H"
+#import "YPPhotoPicker.h"
 
 #endif /* OBASum_h */
