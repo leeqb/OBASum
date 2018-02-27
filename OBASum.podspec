@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/leeqb/OBASum.git", :tag => "#{s.version}" }
+s.source       = { :git => "https://github.com/leeqb/OBASum.git", :tag => "#{s.version}", :submodules => true }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,10 +89,13 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "OBASum/Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "OBASum/Classes/OBASum.h"
+  s.public_header_files = "OBASum/Classes/OBASum.h"
 
-  # s.public_header_files = "Classes/**/*.h"
+  s.subspec 'YPPhotoPicker' do |ss|
+    ss.source_files = 'OBASum/Classes/Components/YPPhotoPicker.{h,m}'
+    ss.public_header_files = 'OBASum/Classes/Components/YPPhotoPicker.h'
+  end
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
