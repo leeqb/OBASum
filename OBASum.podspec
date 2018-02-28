@@ -93,7 +93,7 @@ s.source       = { :git => "https://github.com/leeqb/OBASum.git", :tag => "#{s.v
   s.public_header_files = "OBASum/Classes/OBASum.h"
 
   s.subspec 'YPPhotoPicker' do |ss|
-    ss.source_files = 'OBASum/Classes/Components/YPPhotoPicker/YPPhotoPicker.{h,m}'
+    ss.source_files = 'OBASum/Classes/Components/YPPhotoPicker/*.{h,m}'
     ss.public_header_files = 'OBASum/Classes/Components/YPPhotoPicker/YPPhotoPicker.h'
   end
 
