@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface YPPhotoPicker : NSObject
+
++ (void)showInController:(UIViewController *)controller;
 
 @end

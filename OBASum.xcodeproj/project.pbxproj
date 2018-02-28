@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83159D85204645CE006964D6 /* YPPhotoPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83159D84204645CE006964D6 /* YPPhotoPicker.storyboard */; };
+		83159D88204645FD006964D6 /* YPPhotoPickerTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83159D87204645FD006964D6 /* YPPhotoPickerTestViewController.m */; };
+		83159D8B204648FB006964D6 /* YPPhotoPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83159D8A204648FB006964D6 /* YPPhotoPickerViewController.m */; };
+		83159D8D20464997006964D6 /* YPPhotoPickerTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83159D8C20464997006964D6 /* YPPhotoPickerTest.storyboard */; };
 		837A37DB2045A0EC006C1790 /* YPPhotoPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 837A37DA2045A0EC006C1790 /* YPPhotoPicker.m */; };
 		83B8614120445D89008F4EAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B8614020445D89008F4EAE /* AppDelegate.m */; };
 		83B8614420445D89008F4EAE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B8614320445D89008F4EAE /* ViewController.m */; };
@@ -20,6 +24,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		83159D84204645CE006964D6 /* YPPhotoPicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YPPhotoPicker.storyboard; sourceTree = "<group>"; };
+		83159D86204645FD006964D6 /* YPPhotoPickerTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPPhotoPickerTestViewController.h; sourceTree = "<group>"; };
+		83159D87204645FD006964D6 /* YPPhotoPickerTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPPhotoPickerTestViewController.m; sourceTree = "<group>"; };
+		83159D89204648FB006964D6 /* YPPhotoPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPPhotoPickerViewController.h; sourceTree = "<group>"; };
+		83159D8A204648FB006964D6 /* YPPhotoPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPPhotoPickerViewController.m; sourceTree = "<group>"; };
+		83159D8C20464997006964D6 /* YPPhotoPickerTest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YPPhotoPickerTest.storyboard; sourceTree = "<group>"; };
 		837A37D720459FF0006C1790 /* OBASum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBASum.h; sourceTree = "<group>"; };
 		837A37D92045A0EC006C1790 /* YPPhotoPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPPhotoPicker.h; sourceTree = "<group>"; };
 		837A37DA2045A0EC006C1790 /* YPPhotoPicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPPhotoPicker.m; sourceTree = "<group>"; };
@@ -51,11 +61,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83159D80204644F5006964D6 /* YPPhotoPicker */ = {
+			isa = PBXGroup;
+			children = (
+				83159D8C20464997006964D6 /* YPPhotoPickerTest.storyboard */,
+				83159D86204645FD006964D6 /* YPPhotoPickerTestViewController.h */,
+				83159D87204645FD006964D6 /* YPPhotoPickerTestViewController.m */,
+			);
+			path = YPPhotoPicker;
+			sourceTree = "<group>";
+		};
 		837A37D82045A0D7006C1790 /* YPPhotoPicker */ = {
 			isa = PBXGroup;
 			children = (
+				83159D84204645CE006964D6 /* YPPhotoPicker.storyboard */,
 				837A37D92045A0EC006C1790 /* YPPhotoPicker.h */,
 				837A37DA2045A0EC006C1790 /* YPPhotoPicker.m */,
+				83159D89204648FB006964D6 /* YPPhotoPickerViewController.h */,
+				83159D8A204648FB006964D6 /* YPPhotoPickerViewController.m */,
 			);
 			path = YPPhotoPicker;
 			sourceTree = "<group>";
@@ -133,6 +156,7 @@
 		83B8615920445E0C008F4EAE /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				83159D80204644F5006964D6 /* YPPhotoPicker */,
 				83B8615A20445E0C008F4EAE /* PhotoPicker */,
 			);
 			path = Components;
@@ -205,10 +229,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83159D8D20464997006964D6 /* YPPhotoPickerTest.storyboard in Resources */,
 				83B8614C20445D89008F4EAE /* LaunchScreen.storyboard in Resources */,
 				83EDB9AE20447688009C82ED /* OBASum.podspec in Resources */,
 				83B8614920445D89008F4EAE /* Assets.xcassets in Resources */,
 				83B8614720445D89008F4EAE /* Main.storyboard in Resources */,
+				83159D85204645CE006964D6 /* YPPhotoPicker.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +245,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83159D8B204648FB006964D6 /* YPPhotoPickerViewController.m in Sources */,
+				83159D88204645FD006964D6 /* YPPhotoPickerTestViewController.m in Sources */,
 				83B8616020445E67008F4EAE /* OBAPhotoPicker.m in Sources */,
 				83B8616320445E89008F4EAE /* PhotoPickerViewController.m in Sources */,
 				83B8614420445D89008F4EAE /* ViewController.m in Sources */,
@@ -298,7 +326,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -347,7 +375,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

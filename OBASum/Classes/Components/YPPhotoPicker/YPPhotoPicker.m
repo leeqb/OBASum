@@ -10,4 +10,11 @@
 
 @implementation YPPhotoPicker
 
++ (void)showInController:(UIViewController *)controller
+{
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"YPPhotoPicker" bundle:nil];
+    UINavigationController *nav = (UINavigationController *)[sb instantiateInitialViewController];
+    [controller presentViewController:nav animated:YES completion:nil];
+}
+
 @end
