@@ -75,11 +75,11 @@
 		837A37D82045A0D7006C1790 /* YPPhotoPicker */ = {
 			isa = PBXGroup;
 			children = (
-				83159D84204645CE006964D6 /* YPPhotoPicker.storyboard */,
 				837A37D92045A0EC006C1790 /* YPPhotoPicker.h */,
 				837A37DA2045A0EC006C1790 /* YPPhotoPicker.m */,
 				83159D89204648FB006964D6 /* YPPhotoPickerViewController.h */,
 				83159D8A204648FB006964D6 /* YPPhotoPickerViewController.m */,
+				83159D84204645CE006964D6 /* YPPhotoPicker.storyboard */,
 			);
 			path = YPPhotoPicker;
 			sourceTree = "<group>";

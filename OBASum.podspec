@@ -93,8 +93,9 @@ Pod::Spec.new do |s|
   s.public_header_files = "OBASum/Classes/OBASum.h"
 
   s.subspec 'YPPhotoPicker' do |ss|
-    ss.source_files = 'OBASum/Classes/Components/YPPhotoPicker/*.{h,m,storyboard}'
+    ss.source_files = 'OBASum/Classes/Components/YPPhotoPicker/*.{h,m}'
     ss.public_header_files = 'OBASum/Classes/Components/YPPhotoPicker/YPPhotoPicker.h'
+    ss.resource = "OBASum/Classes/Components/YPPhotoPicker/YPPhotoPicker.storyboard"
   end
 
 
