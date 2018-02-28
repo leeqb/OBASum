@@ -30,6 +30,7 @@
 		83159D89204648FB006964D6 /* YPPhotoPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPPhotoPickerViewController.h; sourceTree = "<group>"; };
 		83159D8A204648FB006964D6 /* YPPhotoPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPPhotoPickerViewController.m; sourceTree = "<group>"; };
 		83159D8C20464997006964D6 /* YPPhotoPickerTest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YPPhotoPickerTest.storyboard; sourceTree = "<group>"; };
+		8329C99B204662BB00AB3A6D /* PrefixHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.h; sourceTree = "<group>"; };
 		837A37D720459FF0006C1790 /* OBASum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBASum.h; sourceTree = "<group>"; };
 		837A37D92045A0EC006C1790 /* YPPhotoPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPPhotoPicker.h; sourceTree = "<group>"; };
 		837A37DA2045A0EC006C1790 /* YPPhotoPicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPPhotoPicker.m; sourceTree = "<group>"; };
@@ -114,6 +115,7 @@
 				83B8614D20445D89008F4EAE /* Info.plist */,
 				83B8614E20445D89008F4EAE /* main.m */,
 				83EDB9AD20447688009C82ED /* OBASum.podspec */,
+				8329C99B204662BB00AB3A6D /* PrefixHeader.h */,
 			);
 			path = OBASum;
 			sourceTree = "<group>";
@@ -388,6 +390,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F53JHE85R7;
+				GCC_PREFIX_HEADER = "${SRCROOT}/${PRODUCT_NAME}/PrefixHeader.h";
 				INFOPLIST_FILE = OBASum/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cx.OBASum;
@@ -402,6 +405,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F53JHE85R7;
+				GCC_PREFIX_HEADER = "${SRCROOT}/${PRODUCT_NAME}/PrefixHeader.h";
 				INFOPLIST_FILE = OBASum/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cx.OBASum;

@@ -6,8 +6,6 @@
 //  Copyright © 2018 ChengXin. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 @interface YPPhotoPickerViewController : UIViewController
 
 @end
