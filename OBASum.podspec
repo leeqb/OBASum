@@ -99,6 +99,8 @@ Pod::Spec.new do |s|
   end
 
   s.subspec "API" do |api|
+    api.source_files = "OBASum/Classes/API/*.{h,m}"
+
     api.subspec "Networking" do |net|
       net.source_files = "OBASum/Classes/API/Networking/*.{h,m}"
       net.public_header_files = "OBASum/Classes/API/Networking/OBANetwork.h"
