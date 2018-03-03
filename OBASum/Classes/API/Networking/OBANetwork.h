@@ -6,8 +6,10 @@
 //  Copyright © 2018 ChengXin. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+typedef void(^RequestFinishedBlock)(id responseObject, NSError *error);
 
 @interface OBANetwork : NSObject
+
++ (void)post:(NSString *)url params:(NSDictionary *)params finishedBlock:(RequestFinishedBlock)finishedBlcok;
 
 @end

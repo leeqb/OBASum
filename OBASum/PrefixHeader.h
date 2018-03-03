@@ -12,4 +12,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#import "OBASum.h"
+
 #endif /* PrefixHeader_h */

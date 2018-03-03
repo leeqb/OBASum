@@ -9,6 +9,10 @@
 #ifndef OBASum_h
 #define OBASum_h
 
+#import "OBAMicros.h"
+
+#import "OBANetwork.h"
+
 #import "YPPhotoPicker.h"
 
 #endif /* OBASum_h */

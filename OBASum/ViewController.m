@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "YPPhotoPickerTestViewController.h"
+#import "DemoMenuViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 {
@@ -24,7 +25,8 @@
 {
     self = [super initWithCoder:aDecoder];
     if (self) {
-        _menus = @[@"衣拼图片选择器"];
+        _menus = @[@{@"menuName": @"API测试", @"subMenus": @[@"网络"]},
+                   @{@"menuName": @"Components测试", @"subMenus": @[@"照片选择器"]}];
     }
     return self;
 }
@@ -42,7 +44,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MenuCell" forIndexPath:indexPath];
-    cell.textLabel.text = _menus[indexPath.row];
+    NSDictionary *dict = _menus[indexPath.row];
+    cell.textLabel.text = dict[@"menuName"];
     
     return cell;
 }
@@ -51,17 +54,12 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     
-    switch (indexPath.row) {
-        case 0:
-        {
-            UIStoryboard *sb = [UIStoryboard storyboardWithName:@"YPPhotoPickerTest" bundle:nil];
-            YPPhotoPickerTestViewController *controller = (YPPhotoPickerTestViewController *)[sb instantiateInitialViewController];
-            [self.navigationController pushViewController:controller animated:YES];
-            break;
-        }
-        default:
-            break;
-    }
+    NSDictionary *dict = _menus[indexPath.row];
+    DemoMenuViewController *menuController = [[DemoMenuViewController alloc] init];
+    menuController.title = dict[@"menuName"];
+    menuController.menuType = indexPath.row;
+    menuController.subMenus = dict[@"subMenus"];
+    [self.navigationController pushViewController:menuController animated:YES];
 }
 
 @end
