@@ -95,7 +95,7 @@ Pod::Spec.new do |s|
   s.subspec "YPPhotoPicker" do |ss|
     ss.source_files = "OBASum/Classes/Components/YPPhotoPicker/*.{h,m}"
     ss.public_header_files = "OBASum/Classes/Components/YPPhotoPicker/YPPhotoPicker.h"
-    ss.resource = "OBASum/Classes/Components/YPPhotoPicker/YPPhotoPicker.storyboard"
+    ss.resource = "OBASum/Classes/Components/YPPhotoPicker/Resources/*.*"
   end
 
   s.subspec "API" do |api|

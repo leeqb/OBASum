@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4D53432643402D08B4590578 /* libPods-OBASum.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E9A8EB0B7D9E81363B261C /* libPods-OBASum.a */; };
 		83076B15204A38300013C5FA /* OBANetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 83076B14204A38300013C5FA /* OBANetwork.m */; };
-		83159D85204645CE006964D6 /* YPPhotoPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83159D84204645CE006964D6 /* YPPhotoPicker.storyboard */; };
 		83159D88204645FD006964D6 /* YPPhotoPickerTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83159D87204645FD006964D6 /* YPPhotoPickerTestViewController.m */; };
 		83159D8B204648FB006964D6 /* YPPhotoPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83159D8A204648FB006964D6 /* YPPhotoPickerViewController.m */; };
 		83159D8D20464997006964D6 /* YPPhotoPickerTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83159D8C20464997006964D6 /* YPPhotoPickerTest.storyboard */; };
@@ -24,6 +23,8 @@
 		83B8614F20445D89008F4EAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B8614E20445D89008F4EAE /* main.m */; };
 		83B8616020445E67008F4EAE /* OBAPhotoPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B8615F20445E67008F4EAE /* OBAPhotoPicker.m */; };
 		83B8616320445E89008F4EAE /* PhotoPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B8616220445E89008F4EAE /* PhotoPickerViewController.m */; };
+		83DAE8E5204D36A2006BF1E3 /* YPPhotoPicker.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83DAE8E4204D36A2006BF1E3 /* YPPhotoPicker.xcassets */; };
+		83DAE8E7204D370C006BF1E3 /* YPPhotoPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83DAE8E6204D370C006BF1E3 /* YPPhotoPicker.storyboard */; };
 		83EDB9AE20447688009C82ED /* OBASum.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 83EDB9AD20447688009C82ED /* OBASum.podspec */; };
 /* End PBXBuildFile section */
 
@@ -31,7 +32,6 @@
 		3F5DAEB4E8CA60BD154234CF /* Pods-OBASum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OBASum.release.xcconfig"; path = "Pods/Target Support Files/Pods-OBASum/Pods-OBASum.release.xcconfig"; sourceTree = "<group>"; };
 		83076B13204A38300013C5FA /* OBANetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBANetwork.h; sourceTree = "<group>"; };
 		83076B14204A38300013C5FA /* OBANetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBANetwork.m; sourceTree = "<group>"; };
-		83159D84204645CE006964D6 /* YPPhotoPicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YPPhotoPicker.storyboard; sourceTree = "<group>"; };
 		83159D86204645FD006964D6 /* YPPhotoPickerTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPPhotoPickerTestViewController.h; sourceTree = "<group>"; };
 		83159D87204645FD006964D6 /* YPPhotoPickerTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPPhotoPickerTestViewController.m; sourceTree = "<group>"; };
 		83159D89204648FB006964D6 /* YPPhotoPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPPhotoPickerViewController.h; sourceTree = "<group>"; };
@@ -60,6 +60,8 @@
 		83B8615F20445E67008F4EAE /* OBAPhotoPicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBAPhotoPicker.m; sourceTree = "<group>"; };
 		83B8616120445E89008F4EAE /* PhotoPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoPickerViewController.h; sourceTree = "<group>"; };
 		83B8616220445E89008F4EAE /* PhotoPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoPickerViewController.m; sourceTree = "<group>"; };
+		83DAE8E4204D36A2006BF1E3 /* YPPhotoPicker.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = YPPhotoPicker.xcassets; sourceTree = "<group>"; };
+		83DAE8E6204D370C006BF1E3 /* YPPhotoPicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YPPhotoPicker.storyboard; sourceTree = "<group>"; };
 		83EDB9AD20447688009C82ED /* OBASum.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OBASum.podspec; sourceTree = SOURCE_ROOT; };
 		87DA033092F086C1D0E2F569 /* Pods-OBASum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OBASum.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OBASum/Pods-OBASum.debug.xcconfig"; sourceTree = "<group>"; };
 		C6E9A8EB0B7D9E81363B261C /* libPods-OBASum.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OBASum.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,11 +144,11 @@
 		837A37D82045A0D7006C1790 /* YPPhotoPicker */ = {
 			isa = PBXGroup;
 			children = (
+				83DAE8E3204D365F006BF1E3 /* Resources */,
 				837A37D92045A0EC006C1790 /* YPPhotoPicker.h */,
 				837A37DA2045A0EC006C1790 /* YPPhotoPicker.m */,
 				83159D89204648FB006964D6 /* YPPhotoPickerViewController.h */,
 				83159D8A204648FB006964D6 /* YPPhotoPickerViewController.m */,
-				83159D84204645CE006964D6 /* YPPhotoPicker.storyboard */,
 			);
 			path = YPPhotoPicker;
 			sourceTree = "<group>";
@@ -246,6 +248,15 @@
 			path = PhotoPicker;
 			sourceTree = "<group>";
 		};
+		83DAE8E3204D365F006BF1E3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				83DAE8E6204D370C006BF1E3 /* YPPhotoPicker.storyboard */,
+				83DAE8E4204D36A2006BF1E3 /* YPPhotoPicker.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -308,11 +319,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				83159D8D20464997006964D6 /* YPPhotoPickerTest.storyboard in Resources */,
+				83DAE8E5204D36A2006BF1E3 /* YPPhotoPicker.xcassets in Resources */,
 				83B8614C20445D89008F4EAE /* LaunchScreen.storyboard in Resources */,
 				83EDB9AE20447688009C82ED /* OBASum.podspec in Resources */,
 				83B8614920445D89008F4EAE /* Assets.xcassets in Resources */,
 				83B8614720445D89008F4EAE /* Main.storyboard in Resources */,
-				83159D85204645CE006964D6 /* YPPhotoPicker.storyboard in Resources */,
+				83DAE8E7204D370C006BF1E3 /* YPPhotoPicker.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

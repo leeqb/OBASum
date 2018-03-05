@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Mhb-Xz-O5I">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="eC6-IA-dhv">
+            <objects>
+                <navigationController id="Mhb-Xz-O5I" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PDS-xS-Wjl">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ctd-zZ-acI" kind="relationship" relationship="rootViewController" id="VEJ-tp-Sdx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Wv-Jr-9CY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1284" y="-430"/>
+        </scene>
+        <!--选择照片-->
+        <scene sceneID="IdW-ZR-nVY">
+            <objects>
+                <viewController title="选择照片" id="ctd-zZ-acI" customClass="YPPhotoPickerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8eg-2R-ieJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yiq-1Z-kSD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Li8-I0-kob">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9PI-Mc-Bfd">
+                                <rect key="frame" x="5" y="69" width="365" height="548"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vaG-gv-pHp">
+                                    <size key="itemSize" width="87" height="87"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AddPhotoCell" id="H9o-il-LSz">
+                                        <rect key="frame" x="0.0" y="0.0" width="87" height="87"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="87" height="87"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stalls_add" translatesAutoresizingMaskIntoConstraints="NO" id="X4j-rK-vcl">
+                                                    <rect key="frame" x="32.5" y="22.5" width="22.5" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="22.5" id="hOn-it-Ead"/>
+                                                        <constraint firstAttribute="height" constant="22" id="rbP-3b-Q4h"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="从相册中选择" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABJ-aT-ZeK">
+                                                    <rect key="frame" x="6" y="51.5" width="74" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.67450980392156867" green="0.67450980392156867" blue="0.67450980392156867" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="ABJ-aT-ZeK" firstAttribute="centerX" secondItem="H9o-il-LSz" secondAttribute="centerX" id="0mF-aV-7UQ"/>
+                                            <constraint firstItem="ABJ-aT-ZeK" firstAttribute="top" secondItem="X4j-rK-vcl" secondAttribute="bottom" constant="7" id="GLr-vA-xlT"/>
+                                            <constraint firstItem="X4j-rK-vcl" firstAttribute="centerX" secondItem="H9o-il-LSz" secondAttribute="centerX" id="Ovi-Bg-b2j"/>
+                                            <constraint firstItem="X4j-rK-vcl" firstAttribute="centerY" secondItem="H9o-il-LSz" secondAttribute="centerY" constant="-10" id="xw7-Iu-8iv"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="ctd-zZ-acI" id="9z2-5d-pMM"/>
+                                    <outlet property="delegate" destination="ctd-zZ-acI" id="0L7-Xm-wDD"/>
+                                </connections>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JkO-hq-fde">
+                                <rect key="frame" x="0.0" y="622" width="375" height="45"/>
+                                <color key="backgroundColor" red="1" green="0.22352941176470587" blue="0.54509803921568623" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="rxv-Ec-0LJ"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="拍摄" image="new_photo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JkO-hq-fde" firstAttribute="leading" secondItem="Li8-I0-kob" secondAttribute="leading" id="9LT-1a-c6A"/>
+                            <constraint firstAttribute="trailing" secondItem="JkO-hq-fde" secondAttribute="trailing" id="FkQ-ke-JN7"/>
+                            <constraint firstAttribute="trailing" secondItem="9PI-Mc-Bfd" secondAttribute="trailing" constant="5" id="Hkc-ch-6N3"/>
+                            <constraint firstItem="JkO-hq-fde" firstAttribute="top" secondItem="9PI-Mc-Bfd" secondAttribute="bottom" constant="5" id="Ily-kI-2V4"/>
+                            <constraint firstItem="9PI-Mc-Bfd" firstAttribute="leading" secondItem="Li8-I0-kob" secondAttribute="leading" constant="5" id="R1Y-Bo-Kku"/>
+                            <constraint firstItem="Yiq-1Z-kSD" firstAttribute="top" secondItem="JkO-hq-fde" secondAttribute="bottom" id="y08-Cl-3NN"/>
+                            <constraint firstItem="9PI-Mc-Bfd" firstAttribute="top" secondItem="8eg-2R-ieJ" secondAttribute="bottom" constant="5" id="yuM-3Q-YPe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="选择图片" id="sns-gg-fYb">
+                        <barButtonItem key="leftBarButtonItem" id="avS-bL-hcD">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wca-ZH-VKu">
+                                <rect key="frame" x="16" y="11" width="9" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="back_1"/>
+                                <connections>
+                                    <action selector="backAction:" destination="ctd-zZ-acI" eventType="touchUpInside" id="qRw-MN-Ffo"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" id="O9S-px-hq3">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eBu-5J-oUt">
+                                <rect key="frame" x="327" y="7" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="保存">
+                                    <color key="titleColor" red="0.67450980392156867" green="0.67450980392156867" blue="0.67450980392156867" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="backButton" destination="wca-ZH-VKu" id="UcV-IJ-fY5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MVx-vY-cEy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-412" y="-430.43478260869568"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back_1" width="9" height="17"/>
+        <image name="new_photo" width="21" height="16"/>
+        <image name="stalls_add" width="22" height="22"/>
+    </resources>
+</document>
