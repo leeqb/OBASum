@@ -28,7 +28,7 @@
         <!--选择照片-->
         <scene sceneID="IdW-ZR-nVY">
             <objects>
-                <viewController title="选择照片" id="ctd-zZ-acI" customClass="YPPhotoPickerViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="YPPhotoPickerViewController" title="选择照片" id="ctd-zZ-acI" customClass="YPPhotoPickerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8eg-2R-ieJ"/>
                         <viewControllerLayoutGuide type="bottom" id="Yiq-1Z-kSD"/>
@@ -93,6 +93,9 @@
                                 <state key="normal" title="拍摄" image="oba_yp_new_photo">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="cameraAction:" destination="ctd-zZ-acI" eventType="touchUpInside" id="i2Y-Kq-wqR"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -109,8 +112,9 @@
                     <navigationItem key="navigationItem" title="选择图片" id="sns-gg-fYb">
                         <barButtonItem key="leftBarButtonItem" id="avS-bL-hcD">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wca-ZH-VKu">
-                                <rect key="frame" x="16" y="11" width="9" height="22"/>
+                                <rect key="frame" x="16" y="11" width="22" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" image="oba_yp_back_1"/>
                                 <connections>
                                     <action selector="backAction:" destination="ctd-zZ-acI" eventType="touchUpInside" id="qRw-MN-Ffo"/>
@@ -124,11 +128,15 @@
                                 <state key="normal" title="保存">
                                     <color key="titleColor" red="0.67450980392156867" green="0.67450980392156867" blue="0.67450980392156867" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="saveButtonAction:" destination="ctd-zZ-acI" eventType="touchUpInside" id="yUp-Wc-TsP"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="backButton" destination="wca-ZH-VKu" id="UcV-IJ-fY5"/>
+                        <outlet property="saveButton" destination="eBu-5J-oUt" id="AVa-xa-SNg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MVx-vY-cEy" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -8,8 +8,9 @@
 
 #import "YPPhotoPickerViewController.h"
 
-@interface YPPhotoPickerViewController ()<UICollectionViewDelegate, UICollectionViewDataSource>
+@interface YPPhotoPickerViewController ()<UICollectionViewDelegate, UICollectionViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *backButton;
+@property (weak, nonatomic) IBOutlet UIButton *saveButton;
 
 @end
 
@@ -17,12 +18,51 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
     [_backButton setImage:[UIImage imageNamed:@"oba_yp_back_2"] forState:UIControlStateHighlighted];
 }
 
+#pragma mark - Private Methods
+- (void)chooseImage:(UIImagePickerControllerSourceType)sourceType
+{
+    if ([UIImagePickerController isSourceTypeAvailable:sourceType]) {
+        UIImagePickerController *pickerController = [[UIImagePickerController alloc] init];
+        pickerController.delegate = self;
+        pickerController.sourceType = sourceType;
+        [self presentViewController:pickerController animated:YES completion:nil];
+    } else {
+        NSLog(@"无操作权限");
+    }
+}
+
+#pragma mark - Button Action
+// 返回
 - (IBAction)backAction:(UIButton *)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    if (self.navigationController.viewControllers.count == 1) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    } else {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+}
+
+// 拍照
+- (IBAction)cameraAction:(UIButton *)sender {
+    [self chooseImage:UIImagePickerControllerSourceTypeCamera];
+}
+
+// 保存
+- (IBAction)saveButtonAction:(UIButton *)sender {
+}
+
+#pragma mark - UIImagePickerControllerDelegate
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
+{
+    [picker dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    [picker dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark - UICollectionViewDataSource
@@ -35,6 +75,11 @@
 {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"AddPhotoCell" forIndexPath:indexPath];
     return cell;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self chooseImage:UIImagePickerControllerSourceTypePhotoLibrary];
 }
 
 @end

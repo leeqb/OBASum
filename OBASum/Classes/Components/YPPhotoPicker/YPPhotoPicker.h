@@ -8,6 +8,8 @@
 
 @interface YPPhotoPicker : NSObject
 
-+ (void)showInController:(UIViewController *)controller;
++ (void)presentFromController:(UIViewController *)controller;
+
++ (void)pushFromController:(UIViewController *)controller;
 
 @end

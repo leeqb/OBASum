@@ -21,7 +21,8 @@
 }
 
 - (IBAction)photoPickAction:(UIButton *)sender {
-    [YPPhotoPicker showInController:self];
+    //[YPPhotoPicker presentFromController:self];
+    [YPPhotoPicker pushFromController:self];
 }
 
 @end

@@ -7,14 +7,22 @@
 //
 
 #import "YPPhotoPicker.h"
+#import "YPPhotoPickerViewController.h"
 
 @implementation YPPhotoPicker
 
-+ (void)showInController:(UIViewController *)controller
++ (void)presentFromController:(UIViewController *)controller
 {
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"YPPhotoPicker" bundle:nil];
     UINavigationController *nav = (UINavigationController *)[sb instantiateInitialViewController];
     [controller presentViewController:nav animated:YES completion:nil];
+}
+
++ (void)pushFromController:(UIViewController *)controller
+{
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"YPPhotoPicker" bundle:nil];
+    YPPhotoPickerViewController *pickerController = [sb instantiateViewControllerWithIdentifier:@"YPPhotoPickerViewController"];
+    [controller.navigationController pushViewController:pickerController animated:YES];
 }
 
 @end
