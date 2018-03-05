@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    [_backButton setImage:[UIImage imageNamed:@"oba_yp_back_2"] forState:UIControlStateHighlighted];
 }
 
 - (IBAction)backAction:(UIButton *)sender {
