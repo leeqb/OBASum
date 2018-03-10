@@ -89,23 +89,25 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "OBASum/Classes/OBASum.h"
+  s.source_files  = "OBASum/Classes/*.{h}", "OBASum/Classes/Base/*.{h, m}", "OBASum/Classes/Category/../*.{h, m}"
   s.public_header_files = "OBASum/Classes/OBASum.h"
-
-  s.subspec "YPPhotoPicker" do |ss|
-    ss.source_files = "OBASum/Classes/Components/YPPhotoPicker/*.{h,m}"
-    ss.public_header_files = "OBASum/Classes/Components/YPPhotoPicker/YPPhotoPicker.h"
-    ss.resource = "OBASum/Classes/Components/YPPhotoPicker/Resources/*.*"
-  end
 
   s.subspec "API" do |api|
     api.source_files = "OBASum/Classes/API/*.{h,m}"
+    api.public_header_files = "OBASum/Classes/API/OBAMicros.h"
 
     api.subspec "Networking" do |net|
       net.source_files = "OBASum/Classes/API/Networking/*.{h,m}"
       net.public_header_files = "OBASum/Classes/API/Networking/OBANetwork.h"
       net.dependency "AFNetworking"
     end
+  end
+
+  s.subspec "YPPhotoPicker" do |ss|
+    ss.source_files = "OBASum/Classes/Components/*.{h,m}", "OBASum/Classes/Components/**/*.{h,m}"
+    ss.public_header_files = "OBASum/Classes/Components/YPPhotoPicker/YPPhotoPicker.h"
+    ss.resource = "OBASum/Classes/Components/YPPhotoPicker/Resources/*.*"
+    ss.dependency "API"
   end
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

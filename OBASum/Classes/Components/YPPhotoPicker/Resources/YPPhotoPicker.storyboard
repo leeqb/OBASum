@@ -23,7 +23,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Wv-Jr-9CY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1284" y="-430"/>
+            <point key="canvasLocation" x="-1305" y="-431"/>
         </scene>
         <!--选择照片-->
         <scene sceneID="IdW-ZR-nVY">
@@ -137,11 +137,98 @@
                     <connections>
                         <outlet property="backButton" destination="wca-ZH-VKu" id="UcV-IJ-fY5"/>
                         <outlet property="saveButton" destination="eBu-5J-oUt" id="AVa-xa-SNg"/>
+                        <segue destination="bt2-A0-kR2" kind="show" identifier="segPreview" id="dlF-72-fbZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MVx-vY-cEy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-412" y="-430.43478260869568"/>
+        </scene>
+        <!--预览-->
+        <scene sceneID="5mY-l3-Vh8">
+            <objects>
+                <viewController storyboardIdentifier="YPPhotoPreviewViewController" title="预览" id="bt2-A0-kR2" customClass="YPPhotoPreviewViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Au-V3-XyI"/>
+                        <viewControllerLayoutGuide type="bottom" id="e0E-sT-Lt4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P4c-K3-yO5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Bn-NH-sd1">
+                                <rect key="frame" x="0.0" y="233.5" width="375" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="9ns-Sx-Sh2"/>
+                                    <constraint firstAttribute="height" constant="200" id="GMg-MX-gq9"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l7r-5x-LDy">
+                                <rect key="frame" x="0.0" y="622" width="375" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tM3-SZ-uDz">
+                                        <rect key="frame" x="15" y="4.5" width="40" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="dCG-e8-lYU"/>
+                                            <constraint firstAttribute="height" constant="35" id="gld-7b-j1E"/>
+                                        </constraints>
+                                        <state key="normal" title="重拍">
+                                            <color key="titleColor" red="1" green="0.22352941179999999" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="repeatAction:" destination="bt2-A0-kR2" eventType="touchUpInside" id="6eb-gZ-CUx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GgG-4A-5uS">
+                                        <rect key="frame" x="305" y="10" width="55" height="25"/>
+                                        <color key="backgroundColor" red="1" green="0.22352941179999999" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="D0E-JA-kXF"/>
+                                            <constraint firstAttribute="width" constant="55" id="mhC-Mp-Xi3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="完成">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="finishAction:" destination="bt2-A0-kR2" eventType="touchUpInside" id="ZtM-Ea-XBK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="GgG-4A-5uS" firstAttribute="centerY" secondItem="l7r-5x-LDy" secondAttribute="centerY" id="1eG-v4-M2b"/>
+                                    <constraint firstItem="tM3-SZ-uDz" firstAttribute="leading" secondItem="l7r-5x-LDy" secondAttribute="leading" constant="15" id="5i2-37-Jlr"/>
+                                    <constraint firstAttribute="height" constant="45" id="Kq7-ZX-Sd9"/>
+                                    <constraint firstAttribute="trailing" secondItem="GgG-4A-5uS" secondAttribute="trailing" constant="15" id="N0C-06-W7d"/>
+                                    <constraint firstItem="tM3-SZ-uDz" firstAttribute="centerY" secondItem="l7r-5x-LDy" secondAttribute="centerY" id="RRb-nO-IjK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="l7r-5x-LDy" firstAttribute="leading" secondItem="P4c-K3-yO5" secondAttribute="leading" id="ESx-9i-lqA"/>
+                            <constraint firstItem="5Bn-NH-sd1" firstAttribute="centerX" secondItem="P4c-K3-yO5" secondAttribute="centerX" id="G7y-NK-So0"/>
+                            <constraint firstAttribute="trailing" secondItem="l7r-5x-LDy" secondAttribute="trailing" id="N4V-sL-eYt"/>
+                            <constraint firstAttribute="bottom" secondItem="l7r-5x-LDy" secondAttribute="bottom" id="obq-CZ-iwN"/>
+                            <constraint firstItem="5Bn-NH-sd1" firstAttribute="centerY" secondItem="P4c-K3-yO5" secondAttribute="centerY" id="qeE-ID-U0P"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageHeight" destination="GMg-MX-gq9" id="P6Z-wT-d61"/>
+                        <outlet property="imageWidth" destination="9ns-Sx-Sh2" id="GTe-n4-xfj"/>
+                        <outlet property="photoImageView" destination="5Bn-NH-sd1" id="BTv-7J-cuu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uRV-cB-6lV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="433" y="-430"/>
         </scene>
     </scenes>
     <resources>

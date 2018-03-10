@@ -7,6 +7,7 @@
 //
 
 #import "YPPhotoPickerViewController.h"
+#import "YPPhotoPreviewViewController.h"
 
 @interface YPPhotoPickerViewController ()<UICollectionViewDelegate, UICollectionViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *backButton;
@@ -23,12 +24,13 @@
 }
 
 #pragma mark - Private Methods
-- (void)chooseImage:(UIImagePickerControllerSourceType)sourceType
+- (void)chooseImageFrom:(UIImagePickerControllerSourceType)sourceType
 {
     if ([UIImagePickerController isSourceTypeAvailable:sourceType]) {
         UIImagePickerController *pickerController = [[UIImagePickerController alloc] init];
         pickerController.delegate = self;
         pickerController.sourceType = sourceType;
+        
         [self presentViewController:pickerController animated:YES completion:nil];
     } else {
         NSLog(@"无操作权限");
@@ -47,7 +49,7 @@
 
 // 拍照
 - (IBAction)cameraAction:(UIButton *)sender {
-    [self chooseImage:UIImagePickerControllerSourceTypeCamera];
+    [self chooseImageFrom:UIImagePickerControllerSourceTypeCamera];
 }
 
 // 保存
@@ -57,6 +59,17 @@
 #pragma mark - UIImagePickerControllerDelegate
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
 {
+    UIImage *originImage = info[UIImagePickerControllerOriginalImage];
+    
+    if (picker.sourceType == UIImagePickerControllerSourceTypeCamera) { // 拍照
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"YPPhotoPicker" bundle:[NSBundle mainBundle]];
+        YPPhotoPreviewViewController *controller = [sb instantiateViewControllerWithIdentifier:@"YPPhotoPreviewViewController"];
+        controller.originImage = originImage;
+        [self.navigationController pushViewController:controller animated:NO];
+    } else { // 相册选取
+        
+    }
+    
     [picker dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -79,7 +92,7 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self chooseImage:UIImagePickerControllerSourceTypePhotoLibrary];
+    [self chooseImageFrom:UIImagePickerControllerSourceTypePhotoLibrary];
 }
 
 @end

@@ -15,6 +15,8 @@
 		834881F1204A94F1006CF252 /* OBANetworkingTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 834881F0204A94F1006CF252 /* OBANetworkingTestViewController.m */; };
 		834881F4204A971E006CF252 /* DemoMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 834881F3204A971E006CF252 /* DemoMenuViewController.m */; };
 		837A37DB2045A0EC006C1790 /* YPPhotoPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 837A37DA2045A0EC006C1790 /* YPPhotoPicker.m */; };
+		839F39E1204E1C3900D56DBE /* YPPhotoPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 839F39E0204E1C3900D56DBE /* YPPhotoPreviewViewController.m */; };
+		839F39E7204E22D300D56DBE /* OBAUILoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 839F39E6204E22D300D56DBE /* OBAUILoader.m */; };
 		83B8614120445D89008F4EAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B8614020445D89008F4EAE /* AppDelegate.m */; };
 		83B8614420445D89008F4EAE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B8614320445D89008F4EAE /* ViewController.m */; };
 		83B8614720445D89008F4EAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B8614520445D89008F4EAE /* Main.storyboard */; };
@@ -23,6 +25,12 @@
 		83B8614F20445D89008F4EAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B8614E20445D89008F4EAE /* main.m */; };
 		83B8616020445E67008F4EAE /* OBAPhotoPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B8615F20445E67008F4EAE /* OBAPhotoPicker.m */; };
 		83B8616320445E89008F4EAE /* PhotoPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B8616220445E89008F4EAE /* PhotoPickerViewController.m */; };
+		83CA14D22053723A00C4FBF5 /* OBABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CA14D12053723A00C4FBF5 /* OBABaseViewController.m */; };
+		83CA14D52053725800C4FBF5 /* OBABaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CA14D42053725800C4FBF5 /* OBABaseTableViewController.m */; };
+		83CA14DB205373F700C4FBF5 /* NSString+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CA14DA205373F700C4FBF5 /* NSString+Extend.m */; };
+		83CA14E02053741500C4FBF5 /* UITableView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CA14DC2053741500C4FBF5 /* UITableView+Extension.m */; };
+		83CA14E12053741500C4FBF5 /* UITableViewCell+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CA14DE2053741500C4FBF5 /* UITableViewCell+Extension.m */; };
+		83CA14E72053772B00C4FBF5 /* UIViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CA14E62053772B00C4FBF5 /* UIViewController+Extension.m */; };
 		83DAE8E5204D36A2006BF1E3 /* YPPhotoPicker.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83DAE8E4204D36A2006BF1E3 /* YPPhotoPicker.xcassets */; };
 		83DAE8E7204D370C006BF1E3 /* YPPhotoPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83DAE8E6204D370C006BF1E3 /* YPPhotoPicker.storyboard */; };
 		83EDB9AE20447688009C82ED /* OBASum.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 83EDB9AD20447688009C82ED /* OBASum.podspec */; };
@@ -46,6 +54,10 @@
 		837A37D720459FF0006C1790 /* OBASum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBASum.h; sourceTree = "<group>"; };
 		837A37D92045A0EC006C1790 /* YPPhotoPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPPhotoPicker.h; sourceTree = "<group>"; };
 		837A37DA2045A0EC006C1790 /* YPPhotoPicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPPhotoPicker.m; sourceTree = "<group>"; };
+		839F39DF204E1C3900D56DBE /* YPPhotoPreviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPPhotoPreviewViewController.h; sourceTree = "<group>"; };
+		839F39E0204E1C3900D56DBE /* YPPhotoPreviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPPhotoPreviewViewController.m; sourceTree = "<group>"; };
+		839F39E5204E22D300D56DBE /* OBAUILoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBAUILoader.h; sourceTree = "<group>"; };
+		839F39E6204E22D300D56DBE /* OBAUILoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBAUILoader.m; sourceTree = "<group>"; };
 		83B8613C20445D89008F4EAE /* OBASum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OBASum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B8613F20445D89008F4EAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		83B8614020445D89008F4EAE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -60,6 +72,18 @@
 		83B8615F20445E67008F4EAE /* OBAPhotoPicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBAPhotoPicker.m; sourceTree = "<group>"; };
 		83B8616120445E89008F4EAE /* PhotoPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoPickerViewController.h; sourceTree = "<group>"; };
 		83B8616220445E89008F4EAE /* PhotoPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoPickerViewController.m; sourceTree = "<group>"; };
+		83CA14D02053723A00C4FBF5 /* OBABaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBABaseViewController.h; sourceTree = "<group>"; };
+		83CA14D12053723A00C4FBF5 /* OBABaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBABaseViewController.m; sourceTree = "<group>"; };
+		83CA14D32053725800C4FBF5 /* OBABaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBABaseTableViewController.h; sourceTree = "<group>"; };
+		83CA14D42053725800C4FBF5 /* OBABaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBABaseTableViewController.m; sourceTree = "<group>"; };
+		83CA14D9205373F700C4FBF5 /* NSString+Extend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Extend.h"; sourceTree = "<group>"; };
+		83CA14DA205373F700C4FBF5 /* NSString+Extend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extend.m"; sourceTree = "<group>"; };
+		83CA14DC2053741500C4FBF5 /* UITableView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Extension.m"; sourceTree = "<group>"; };
+		83CA14DD2053741500C4FBF5 /* UITableViewCell+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Extension.h"; sourceTree = "<group>"; };
+		83CA14DE2053741500C4FBF5 /* UITableViewCell+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Extension.m"; sourceTree = "<group>"; };
+		83CA14DF2053741500C4FBF5 /* UITableView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Extension.h"; sourceTree = "<group>"; };
+		83CA14E52053772B00C4FBF5 /* UIViewController+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Extension.h"; sourceTree = "<group>"; };
+		83CA14E62053772B00C4FBF5 /* UIViewController+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Extension.m"; sourceTree = "<group>"; };
 		83DAE8E4204D36A2006BF1E3 /* YPPhotoPicker.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = YPPhotoPicker.xcassets; sourceTree = "<group>"; };
 		83DAE8E6204D370C006BF1E3 /* YPPhotoPicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YPPhotoPicker.storyboard; sourceTree = "<group>"; };
 		83EDB9AD20447688009C82ED /* OBASum.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OBASum.podspec; sourceTree = SOURCE_ROOT; };
@@ -149,6 +173,8 @@
 				837A37DA2045A0EC006C1790 /* YPPhotoPicker.m */,
 				83159D89204648FB006964D6 /* YPPhotoPickerViewController.h */,
 				83159D8A204648FB006964D6 /* YPPhotoPickerViewController.m */,
+				839F39DF204E1C3900D56DBE /* YPPhotoPreviewViewController.h */,
+				839F39E0204E1C3900D56DBE /* YPPhotoPreviewViewController.m */,
 			);
 			path = YPPhotoPicker;
 			sourceTree = "<group>";
@@ -196,6 +222,8 @@
 			children = (
 				837A37D720459FF0006C1790 /* OBASum.h */,
 				83076B11204A36F70013C5FA /* API */,
+				83CA14CF2053722300C4FBF5 /* Base */,
+				83CA14D6205372B000C4FBF5 /* Category */,
 				83B8615620445DE2008F4EAE /* Components */,
 			);
 			path = Classes;
@@ -204,6 +232,8 @@
 		83B8615620445DE2008F4EAE /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				839F39E5204E22D300D56DBE /* OBAUILoader.h */,
+				839F39E6204E22D300D56DBE /* OBAUILoader.m */,
 				83B8615720445DE2008F4EAE /* PhotoPicker */,
 				837A37D82045A0D7006C1790 /* YPPhotoPicker */,
 			);
@@ -246,6 +276,48 @@
 				83B8616220445E89008F4EAE /* PhotoPickerViewController.m */,
 			);
 			path = PhotoPicker;
+			sourceTree = "<group>";
+		};
+		83CA14CF2053722300C4FBF5 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				83CA14D02053723A00C4FBF5 /* OBABaseViewController.h */,
+				83CA14D12053723A00C4FBF5 /* OBABaseViewController.m */,
+				83CA14D32053725800C4FBF5 /* OBABaseTableViewController.h */,
+				83CA14D42053725800C4FBF5 /* OBABaseTableViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		83CA14D6205372B000C4FBF5 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				83CA14D7205373BC00C4FBF5 /* Foundation */,
+				83CA14D8205373BC00C4FBF5 /* UIKit */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		83CA14D7205373BC00C4FBF5 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				83CA14D9205373F700C4FBF5 /* NSString+Extend.h */,
+				83CA14DA205373F700C4FBF5 /* NSString+Extend.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		83CA14D8205373BC00C4FBF5 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				83CA14DF2053741500C4FBF5 /* UITableView+Extension.h */,
+				83CA14DC2053741500C4FBF5 /* UITableView+Extension.m */,
+				83CA14DD2053741500C4FBF5 /* UITableViewCell+Extension.h */,
+				83CA14DE2053741500C4FBF5 /* UITableViewCell+Extension.m */,
+				83CA14E52053772B00C4FBF5 /* UIViewController+Extension.h */,
+				83CA14E62053772B00C4FBF5 /* UIViewController+Extension.m */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		83DAE8E3204D365F006BF1E3 /* Resources */ = {
@@ -389,13 +461,21 @@
 				83159D8B204648FB006964D6 /* YPPhotoPickerViewController.m in Sources */,
 				83159D88204645FD006964D6 /* YPPhotoPickerTestViewController.m in Sources */,
 				83B8616020445E67008F4EAE /* OBAPhotoPicker.m in Sources */,
+				83CA14D52053725800C4FBF5 /* OBABaseTableViewController.m in Sources */,
 				834881F1204A94F1006CF252 /* OBANetworkingTestViewController.m in Sources */,
 				834881F4204A971E006CF252 /* DemoMenuViewController.m in Sources */,
+				839F39E1204E1C3900D56DBE /* YPPhotoPreviewViewController.m in Sources */,
+				83CA14DB205373F700C4FBF5 /* NSString+Extend.m in Sources */,
 				83B8616320445E89008F4EAE /* PhotoPickerViewController.m in Sources */,
 				83B8614420445D89008F4EAE /* ViewController.m in Sources */,
 				83076B15204A38300013C5FA /* OBANetwork.m in Sources */,
 				83B8614F20445D89008F4EAE /* main.m in Sources */,
+				83CA14D22053723A00C4FBF5 /* OBABaseViewController.m in Sources */,
+				83CA14E12053741500C4FBF5 /* UITableViewCell+Extension.m in Sources */,
 				83B8614120445D89008F4EAE /* AppDelegate.m in Sources */,
+				839F39E7204E22D300D56DBE /* OBAUILoader.m in Sources */,
+				83CA14E02053741500C4FBF5 /* UITableView+Extension.m in Sources */,
+				83CA14E72053772B00C4FBF5 /* UIViewController+Extension.m in Sources */,
 				837A37DB2045A0EC006C1790 /* YPPhotoPicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
